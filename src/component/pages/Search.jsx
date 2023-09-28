@@ -22,10 +22,6 @@ function Search() {
   useEffect(() => {
     const fetchSearchField = searchContent(type, searchField);
     fetchSearchField.then((value) => {
-      // if (value?.data) {
-      //   const genresId = value?.data.map((e)=>{
-      //     return e.id;
-      //   })
       setContent(value?.data);
     });
   }, [type]);
